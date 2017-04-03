@@ -1,0 +1,3 @@
+define({
+	"service:storage" : "Stockage"
+});
