@@ -29,12 +29,12 @@ public class StorageResourceTest extends AbstractAppTest {
 	private StorageResource resource;
 
 	@BeforeEach
-	public void prepareData() throws IOException {
+	void prepareData() throws IOException {
 		persistEntities("csv", new Class[] { Node.class }, StandardCharsets.UTF_8.name());
 	}
 
 	@Test
-	public void getKey() {
+	void getKey() {
 		// Coverage only
 		Assertions.assertEquals("service:storage", resource.getKey());
 	}
